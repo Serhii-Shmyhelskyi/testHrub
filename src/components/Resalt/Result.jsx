@@ -1,8 +1,16 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setPlusStep } from "../Redux/slices/questionSlice";
-import masl from "../../assets/img/biluy.jpeg";
+
+import hrub1 from "../../assets/img/hrub1.jpg";
+import hrub2 from "../../assets/img/hrub2.jpg";
+import hrub3 from "../../assets/img/hrub3.jpeg";
+import hrub4 from "../../assets/img/hrub4.jpg";
+import hrub5 from "../../assets/img/hrub5.jpg";
+import hrub6 from "../../assets/img/hrub6.jpg";
+
 export const Result = () => {
   const step = useSelector((state) => state.question.step);
   const value = useSelector((state) => state.question.value);
@@ -20,7 +28,7 @@ export const Result = () => {
               розрізуванні на повітрі над пластинками та в ніжці стає
               брудно-синюватим, запах і смак приємні."
             </div>
-            <img className="result_finalImg" src={masl} alt="Маслюк" />
+            <img className="result_finalImg" src={hrub1} alt="Маслюк" />
           </div>
         ) : value < 4 ? (
           <div>
@@ -29,7 +37,7 @@ export const Result = () => {
               проте швидко псується. Використовують свіжим, про запас сушать,
               солять, маринують."
             </div>
-            <img className="result_finalImg" src={masl} alt="Маслюк" />
+            <img className="result_finalImg" src={hrub2} alt="Маслюк" />
           </div>
         ) : value < 7 ? (
           <div>
@@ -40,7 +48,7 @@ export const Result = () => {
               опецькуватий, часто з шапкою меншою від ніжки, так і крисатий, з
               шапкою учетверо більшою за ніжку."
             </div>
-            <img className="result_finalImg" src={masl} alt="Маслюк" />
+            <img className="result_finalImg" src={hrub3} alt="Маслюк" />
           </div>
         ) : value < 9 ? (
           <div>
@@ -52,7 +60,7 @@ export const Result = () => {
               Україні в листяних лісах (переважно під березою та вільхою), на
               вогких місцях; у червні — вересні"
             </div>
-            <img className="result_finalImg" src={masl} alt="Маслюк" />
+            <img className="result_finalImg" src={hrub4} alt="Маслюк" />
           </div>
         ) : value < 10 ? (
           <div>
@@ -65,7 +73,7 @@ export const Result = () => {
               білоповстиста. М'якуш білий, приємний на смак, пахне щойнозмеленим
               борошном."
             </div>
-            <img className="result_finalImg" src={masl} alt="Маслюк" />
+            <img className="result_finalImg" src={hrub5} alt="Маслюк" />
           </div>
         ) : (
           <div>
@@ -77,7 +85,7 @@ export const Result = () => {
               до ДНК печериці садової, що запобігає потемнінню плодових тіл при
               механічному ушкодженні."
             </div>
-            <img className="result_finalImg" src={masl} alt="Маслюк" />
+            <img className="result_finalImg" src={hrub6} alt="Маслюк" />
           </div>
         )}
       </div>

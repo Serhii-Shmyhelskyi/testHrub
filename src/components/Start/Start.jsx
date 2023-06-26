@@ -5,7 +5,7 @@ export const Start = () => {
   return (
     <div className="start">
       <Link to="question">
-        <button className="button">Почнім</button>
+        <button className="button">Почнемо</button>
       </Link>
     </div>
   );

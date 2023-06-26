@@ -5,10 +5,11 @@ import App from "../../App";
 import Start from "../Start/Start";
 import Questions from "../Question";
 import { Result } from "../Resalt/Result";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
-    path: "testHrub",
+    path: "/",
     // testHrub
     element: <App />,
     children: [
@@ -17,17 +18,17 @@ export const router = createBrowserRouter([
         element: <Start />,
       },
       {
-        path: "question",
+        path: "/question",
         element: <Questions />,
       },
       {
-        path: "result",
+        path: "/result",
         element: <Result />,
       },
-      //   {
-      //     path: "*",
-      //     element: <ErrorPage />,
-      //   },
+      {
+        path: "*",
+        element: <ErrorPage />,
+      },
     ],
   },
 ]);
