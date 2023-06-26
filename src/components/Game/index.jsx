@@ -12,7 +12,6 @@ const Game = () => {
 
   const onClickVariant = (index) => {
     dispatch(setPlusValue(index));
-    console.log(index);
     dispatch(setPlusStep(1));
   };
   return (

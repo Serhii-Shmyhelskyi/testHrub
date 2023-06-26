@@ -18,14 +18,20 @@ html {
 }
 
 body {
+  background-image: url(https://cdn.abo.media/upload/article/o_1eh79l6161inb59d7sp158ncp035.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #232323;
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  background-color: #ffdf8c;
+  // background-color: #ffdf8c;
 }
 
 .wrapper {
+  background-image: url(https://img.freepik.com/free-vector/forest-scene-with-various-forest-trees_1308-57640.jpg?w=996&t=st=1687794087~exp=1687794687~hmac=b1037453cee2dac5e91f0255acb2ae9b64f30c79a200328144a10122bc321736);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1170px;
   height: 100%;
   background-color: #fff;
@@ -441,51 +447,69 @@ template {
   font-size: 34px;
 }
 
-.wrapper_question {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #787373;
-  margin: 0 auto;
-}
-.question_left {
-  width: 300px;
-}
-.question_right {
-  width: 300px;
-}
-
 h1 {
   margin: 0;
   font-size: 50px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 50px;
   padding-top: 20px;
 }
 
 .start {
-  height: 300px;
+  height: 550px;
 }
 
-.input_button {
+.button {
   display: block;
   height: 200px;
   width: 300px;
   background-color: #bcf5ae;
   border-radius: 50px;
-  margin: 50px auto;
+  margin: 30px auto;
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    background-color: #47d623;
+  }
 }
 
 .result {
-  height: 550px;
+  height: 100%;
   h2 {
     text-align: center;
     font-size: 30px;
-    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 600px;
+    margin: 25px auto;
+    padding: 10px;
   }
   div {
     font-size: 24px;
     text-align: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 600px;
+    margin: 0 auto;
+    .result_finalImg {
+      margin-top: 20px;
+      border-radius: 30px;
+      width: 350px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .result {
+    h2 {
+      width: 350px;
+    }
+    div {
+      width: 350px;
+    }
   }
 }

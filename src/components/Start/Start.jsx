@@ -5,7 +5,7 @@ export const Start = () => {
   return (
     <div className="start">
       <Link to="question">
-        <input className="input_button" type="button" value="Почнім" />
+        <button className="button">Почнім</button>
       </Link>
     </div>
   );
