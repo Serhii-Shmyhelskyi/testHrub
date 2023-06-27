@@ -48,6 +48,9 @@
     ul {
       li {
         width: 350px;
+        &:hover {
+          background-color: #ffffff;
+        }
       }
     }
   }
