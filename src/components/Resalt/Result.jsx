@@ -30,7 +30,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub1} alt="Маслюк" />
           </div>
-        ) : value < 10 ? (
+        ) : value < 8 ? (
           <div>
             <div>
               "Маслюк зернистий. Дуже добрий їстівний гриб другої категорії,
@@ -39,7 +39,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub2} alt="Маслюк" />
           </div>
-        ) : value < 16 ? (
+        ) : value < 12 ? (
           <div>
             <div>
               "Білий гриб. Найкращий з відомих їстівних грибів. Зустрічається по
@@ -50,7 +50,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub3} alt="Маслюк" />
           </div>
-        ) : value < 20 ? (
+        ) : value < 18 ? (
           <div>
             <div>
               "Сироїжка світло-жовта. Спорова маса жовта-вохряна. Спори 8-10 Х
@@ -62,7 +62,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub4} alt="Маслюк" />
           </div>
-        ) : value < 24 ? (
+        ) : value < 22 ? (
           <div>
             <div>
               "Підвишень. Зустрічається по всій Україні: у листяних і мішаних
