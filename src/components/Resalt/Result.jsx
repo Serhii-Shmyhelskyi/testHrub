@@ -19,7 +19,7 @@ export const Result = () => {
     <div className="result">
       <h2>Який ти їстивний гриб?</h2>
       <div className="result_final">
-        {value == 0 ? (
+        {value < 5 ? (
           <div>
             <div>
               "Маслюк слизький. Росте у модринових лісах; у липні — жовтні.
@@ -30,7 +30,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub1} alt="Маслюк" />
           </div>
-        ) : value < 4 ? (
+        ) : value < 10 ? (
           <div>
             <div>
               "Маслюк зернистий. Дуже добрий їстівний гриб другої категорії,
@@ -39,7 +39,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub2} alt="Маслюк" />
           </div>
-        ) : value < 7 ? (
+        ) : value < 16 ? (
           <div>
             <div>
               "Білий гриб. Найкращий з відомих їстівних грибів. Зустрічається по
@@ -50,7 +50,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub3} alt="Маслюк" />
           </div>
-        ) : value < 9 ? (
+        ) : value < 20 ? (
           <div>
             <div>
               "Сироїжка світло-жовта. Спорова маса жовта-вохряна. Спори 8-10 Х
@@ -62,7 +62,7 @@ export const Result = () => {
             </div>
             <img className="result_finalImg" src={hrub4} alt="Маслюк" />
           </div>
-        ) : value < 10 ? (
+        ) : value < 24 ? (
           <div>
             <div>
               "Підвишень. Зустрічається по всій Україні: у листяних і мішаних
