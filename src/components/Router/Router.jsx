@@ -5,7 +5,7 @@ import App from "../../App";
 import Start from "../Start/Start";
 import Questions from "../Question";
 import { Result } from "../Resalt/Result";
-import ErrorPage from "../ErrorPage/ErrorPage";
+import ErrorComponent from "../ErrorComponent";
 
 export const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <ErrorPage />,
+        element: <ErrorComponent />,
       },
     ],
   },

@@ -8,11 +8,7 @@ import { Result } from "../Resalt/Result";
 const Questions = () => {
   const questions = useSelector((state) => state.question.item);
   const step = useSelector((state) => state.question.step);
-  return (
-    <div className="wrapper">
-      {step != questions.length ? <Game /> : <Result />}
-    </div>
-  );
+  return <div>{step != questions.length ? <Game /> : <Result />}</div>;
 };
 
 export default Questions;

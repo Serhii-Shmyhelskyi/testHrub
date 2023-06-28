@@ -1,0 +1,36 @@
+.root {
+  background-color: rgba(240, 248, 255, 0.769);
+  border-radius: 50px;
+  padding: 100px;
+  max-width: 750px;
+  margin: 25px auto;
+  text-align: center;
+
+  span {
+    font-size: 78px;
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.description {
+  font-size: 22px;
+}
+
+@media (max-width: 700px) {
+  .root {
+    width: 100%;
+    padding: 20px;
+    h1 {
+      font-size: 34px;
+      margin: 10px;
+    }
+    p {
+      margin-top: 20px;
+    }
+    span {
+      font-size: 52px;
+    }
+  }
+}
