@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-import styles from "../../components/Question/question.module.scss";
+import styles from "./question.module.scss";
 import { useSelector } from "react-redux";
 import Game from "../Game";
 import { Result } from "../Resalt/Result";
+import { questions } from "../data/allData";
 
 const Questions = () => {
-  const questions = useSelector((state) => state.question.item);
   const step = useSelector((state) => state.question.step);
   return <div>{step != questions.length ? <Game /> : <Result />}</div>;
 };

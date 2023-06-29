@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "../../App";
 import Start from "../Start/Start";
-import Questions from "../Question";
+import Questions from "../Questions";
 import { Result } from "../Resalt/Result";
 import ErrorComponent from "../ErrorComponent";
 

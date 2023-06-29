@@ -2,9 +2,9 @@ import React from "react";
 import styles from "../../components/Game/game.module.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { setPlusStep, setPlusValue } from "../Redux/slices/questionSlice";
+import { questions } from "../data/allData";
 
 const Game = () => {
-  const questions = useSelector((state) => state.question.item);
   const step = useSelector((state) => state.question.step);
   const dispatch = useDispatch();
   const question = questions[step];
