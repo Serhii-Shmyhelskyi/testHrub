@@ -15,20 +15,24 @@ const Game = () => {
     dispatch(setPlusStep(1));
   };
   return (
-    <div className={styles.game_wrapper}>
-      <div className={styles.wrapper_progress}>
-        <div style={{ width: `${percent}%` }} className={styles.progress}></div>
+    <div className={styles.root}>
+      <div className={styles.game_wrapper}>
+        <div className={styles.wrapper_progress}>
+          <div
+            style={{ width: `${percent}%` }}
+            className={styles.progress}></div>
+        </div>
+        <h2>{question.title}</h2>
+        <ul>
+          {question.variants.map((obj, index) => {
+            return (
+              <li onClick={() => onClickVariant(index)} key={index}>
+                {obj}
+              </li>
+            );
+          })}
+        </ul>
       </div>
-      <h2>{question.title}</h2>
-      <ul>
-        {question.variants.map((obj, index) => {
-          return (
-            <li onClick={() => onClickVariant(index)} key={index}>
-              {obj}
-            </li>
-          );
-        })}
-      </ul>
     </div>
   );
 };
