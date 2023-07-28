@@ -48,9 +48,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.wrapper {
-  height: 100vh;
-}
 
 .container {
   max-width: 1200px;
@@ -474,6 +471,10 @@ h1 {
 }
 
 .result {
+  background-image: url(https://cdn.abo.media/upload/article/o_1eh79l6161inb59d7sp158ncp035.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
   padding: 10px;
   text-align: center;
   h2 {

@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 export const Start = () => {
   return (
-    <div className="start">
-      <Link to="question">
-        <button className="button">Почнемо</button>
-      </Link>
-    </div>
+    <>
+      <h1>Грибний тест</h1>
+      <div className="start">
+        <Link to="question">
+          <button className="button">Почнемо</button>
+        </Link>
+      </div>
+    </>
   );
 };
 

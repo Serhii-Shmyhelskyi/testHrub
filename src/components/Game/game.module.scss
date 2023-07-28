@@ -1,11 +1,12 @@
 .game_wrapper {
-  margin: 50px auto;
+  margin: 0 auto;
   height: 570px;
   width: 500px;
   border-radius: 30px;
   padding: 40px;
   background-color: #ffffff98;
   position: relative;
+  top: 50px;
   &:before,
   &:after {
     content: "";
@@ -83,7 +84,6 @@
     width: 350px;
     padding: 5px;
     height: 530px;
-    margin: 20px auto;
     h2 {
       width: 330px;
     }
