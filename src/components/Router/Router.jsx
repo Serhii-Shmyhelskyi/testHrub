@@ -9,7 +9,7 @@ import ErrorComponent from "../ErrorComponent";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "testHrub",
     // testHrub
     element: <App />,
     children: [
